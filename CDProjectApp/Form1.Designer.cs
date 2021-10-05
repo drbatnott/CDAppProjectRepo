@@ -38,6 +38,8 @@ namespace CDProjectApp
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.genreLabel = new System.Windows.Forms.Label();
+            this.genreComboBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,11 +109,38 @@ namespace CDProjectApp
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
+            // genreLabel
+            // 
+            this.genreLabel.AutoSize = true;
+            this.genreLabel.Location = new System.Drawing.Point(33, 61);
+            this.genreLabel.Name = "genreLabel";
+            this.genreLabel.Size = new System.Drawing.Size(41, 15);
+            this.genreLabel.TabIndex = 1;
+            this.genreLabel.Text = "Genre:";
+            // 
+            // genreComboBox
+            // 
+            this.genreComboBox.FormattingEnabled = true;
+            this.genreComboBox.Location = new System.Drawing.Point(102, 55);
+            this.genreComboBox.Name = "genreComboBox";
+            this.genreComboBox.Size = new System.Drawing.Size(202, 23);
+            this.genreComboBox.TabIndex = 2;
+            this.genreComboBox.Items.AddRange(new object[] {
+                        "Folk Music",
+                        "Jazz",
+                        "Opera",
+                        "Grunge",
+                        "Rap",
+                        "Hiphop",
+                        "Rock Music"});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.genreComboBox);
+            this.Controls.Add(this.genreLabel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -134,6 +163,8 @@ namespace CDProjectApp
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label genreLabel;
+        private System.Windows.Forms.ComboBox genreComboBox;
     }
 }
 
