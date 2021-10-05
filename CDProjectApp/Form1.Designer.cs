@@ -40,6 +40,7 @@ namespace CDProjectApp
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.genreLabel = new System.Windows.Forms.Label();
             this.genreComboBox = new System.Windows.Forms.ComboBox();
+            this.addDataToListButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +118,7 @@ namespace CDProjectApp
             this.genreLabel.Size = new System.Drawing.Size(41, 15);
             this.genreLabel.TabIndex = 1;
             this.genreLabel.Text = "Genre:";
+            this.genreLabel.Visible = false;
             // 
             // genreComboBox
             // 
@@ -129,17 +131,32 @@ namespace CDProjectApp
             "Rap",
             "Hiphop",
             "Rock Music"});
+            this.genreComboBox.SelectedIndex = 0;
             this.genreComboBox.Location = new System.Drawing.Point(102, 55);
             this.genreComboBox.Name = "genreComboBox";
             this.genreComboBox.Size = new System.Drawing.Size(202, 23);
             this.genreComboBox.TabIndex = 2;
             this.genreComboBox.SelectedIndexChanged += new System.EventHandler(this.genreComboBox_SelectedIndexChanged);
+            genreComboBox.Visible = false;
+            // 
+            // addDataToListButton
+            // 
+            this.addDataToListButton.Location = new System.Drawing.Point(558, 376);
+            this.addDataToListButton.Name = "addDataToListButton";
+            this.addDataToListButton.Size = new System.Drawing.Size(123, 45);
+            this.addDataToListButton.TabIndex = 3;
+            this.addDataToListButton.Text = "Add Data";
+            this.addDataToListButton.UseVisualStyleBackColor = true;
+            this.addDataToListButton.Enabled = false;
+            this.addDataToListButton.Click += new System.EventHandler(this.addDataToListButton_Click);
+            this.addDataToListButton.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.addDataToListButton);
             this.Controls.Add(this.genreComboBox);
             this.Controls.Add(this.genreLabel);
             this.Controls.Add(this.menuStrip1);
@@ -166,6 +183,7 @@ namespace CDProjectApp
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label genreLabel;
         private System.Windows.Forms.ComboBox genreComboBox;
+        private System.Windows.Forms.Button addDataToListButton;
     }
 }
 
