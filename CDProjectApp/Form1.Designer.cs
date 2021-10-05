@@ -71,43 +71,45 @@ namespace CDProjectApp
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Enabled = false;
             // 
             // shareToolStripMenuItem
             // 
             this.shareToolStripMenuItem.Name = "shareToolStripMenuItem";
-            this.shareToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.shareToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.shareToolStripMenuItem.Text = "Share";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // genreLabel
@@ -131,25 +133,24 @@ namespace CDProjectApp
             "Rap",
             "Hiphop",
             "Rock Music"});
-            this.genreComboBox.SelectedIndex = 0;
             this.genreComboBox.Location = new System.Drawing.Point(102, 55);
             this.genreComboBox.Name = "genreComboBox";
             this.genreComboBox.Size = new System.Drawing.Size(202, 23);
             this.genreComboBox.TabIndex = 2;
+            this.genreComboBox.Visible = false;
             this.genreComboBox.SelectedIndexChanged += new System.EventHandler(this.genreComboBox_SelectedIndexChanged);
-            genreComboBox.Visible = false;
             // 
             // addDataToListButton
             // 
+            this.addDataToListButton.Enabled = false;
             this.addDataToListButton.Location = new System.Drawing.Point(558, 376);
             this.addDataToListButton.Name = "addDataToListButton";
             this.addDataToListButton.Size = new System.Drawing.Size(123, 45);
             this.addDataToListButton.TabIndex = 3;
             this.addDataToListButton.Text = "Add Data";
             this.addDataToListButton.UseVisualStyleBackColor = true;
-            this.addDataToListButton.Enabled = false;
-            this.addDataToListButton.Click += new System.EventHandler(this.addDataToListButton_Click);
             this.addDataToListButton.Visible = false;
+            this.addDataToListButton.Click += new System.EventHandler(this.addDataToListButton_Click);
             // 
             // Form1
             // 
